@@ -1,0 +1,16 @@
+# Core dependencies
+torch>=2.1.0
+gymnasium>=0.29.0
+numpy>=1.24.0
+wandb>=0.16.0
+pyyaml>=6.0
+matplotlib>=3.8.0
+stable-baselines3>=2.2.0
+
+# Development dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.12.0
+mypy>=1.7.0
+isort>=5.13.0
+hypothesis>=6.92.0

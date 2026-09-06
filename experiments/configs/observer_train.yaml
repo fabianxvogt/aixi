@@ -1,0 +1,38 @@
+# ES2: Observer Training Configuration
+# Purpose: Train Observer to predict next observations from latent states + actions
+
+# Environment Configuration
+env_name: "GridWorld-1D"
+max_episode_steps: 100
+
+# Observer Architecture
+latent_dim: 8
+encoder_hidden: [32, 16]
+predictor_hidden: [32]
+
+# Data Collection
+n_data_transitions: 10000  # Total transitions to collect
+test_fraction: 0.2  # 20% for testing
+
+# Training Configuration
+n_train_steps: 1000  # Gradient steps
+batch_size: 64
+observer_lr: 0.001  # 1e-3 learning rate
+eval_interval: 100  # Evaluate every N steps
+
+# Reproducibility
+seed: 42
+
+# Logging Configuration
+wandb_project: "aixi-observer-actor"
+wandb_name: "observer-training-gridworld"
+wandb_tags:
+  - "ES2"
+  - "observer"
+  - "gridworld"
+
+# Output Paths
+checkpoint_dir: "checkpoints"
+plot_dir: "plots"
+data_dir: "data"
+log_dir: "logs"

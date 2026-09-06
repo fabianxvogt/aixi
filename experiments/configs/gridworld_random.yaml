@@ -1,0 +1,22 @@
+# ES1: Random Baseline Configuration
+# Purpose: Validate environment, tracking, and metrics with random policy
+
+# Environment Configuration
+env_name: "GridWorld-1D"
+max_episode_steps: 100
+
+# Training Configuration
+n_episodes: 100
+seed: 42
+
+# Logging Configuration
+wandb_project: "aixi-observer-actor"
+wandb_name: "random-baseline-gridworld"
+wandb_tags:
+  - "ES1"
+  - "random-baseline"
+  - "gridworld"
+
+# Output Paths
+plot_dir: "plots"
+log_dir: "logs"
