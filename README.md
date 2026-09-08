@@ -1,3 +1,12 @@
+<!-- portfolio
+{
+  "title": "Aixi",
+  "topic": "Artificial intelligence/Learning systems",
+  "type": "research",
+  "description": "AIXI-inspired observer-actor reinforcement learning experiments"
+}
+-->
+
 # AIXI: Observer-Actor RL with Model-Based Planning
 
 **An AIXI-inspired reinforcement learning system implementing modular Observer-Actor architecture with imagination-based planning.**
